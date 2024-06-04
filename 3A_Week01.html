@@ -1,18 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>四技三JavaScript程式設計(B)</title>
     <link rel="icon" href="/img/233976.png" type="image/x-icon" />
+
+    <!-- 以下css用法是External的用法 -->
+    <style>
+        p {
+            color: blue;
+            text-align: center;
+            font-size: 20px;
+        }
+
+        /* css當中用來定義id屬性的方式 */
+        #myh1 {
+            color: green;
+            text-align: center;
+        }
+
+        /* css當中用來定義class屬性的方式 */
+        .class1 {
+            background-color: wheat;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
+        /* 用於 p 並且屬性class的名稱為 class1 */
+        p.class1 {
+            background-color: wheat;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+    </style>
+
+    <!-- 以下css的用法是Internal的用法 -->
+    <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
-    <h1 title="">JavaScript程式設計</h1>
+    <h1 class="class1" id="myh1" title="">JavaScript程式設計</h1>
     <h2>第一週</h2>
     <h3>課程內容</h3>
-    <p>本週只要介紹JavaScript的基本語法，包括變數，運算子，迴圈等。</p>
+
+    <!-- 以下css用法是Inline用法 -->
+    <p style="color: red; font-size: 20px;">本週只要介紹JavaScript的基本語法，包括變數，運算子，迴圈等。</p>
     <br />
-    <p>介紹html相關的tag(element)</p>
+    <p class="class1">介紹html相關的tag(element)</p>
     <a href="https://www.stust.edu.tw" target="_blank"><img src="img/logo.png" alt="南臺科技大學" /></a>
     <a href="aboutme.html">我是誰？</a>
     <img src="img/1130124.jpg" width="300" height="200" alt="南臺科技大學" />
@@ -52,4 +88,5 @@
     </table>
 
   </body>
+
 </html>
