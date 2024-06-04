@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Page</title>
+
+    <!-- css效益來說是 Inline > Internal > External -->
+    <!-- css External -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- css Internal -->
+    <style>
+        p {
+            text-decoration: underline;
+        }
+
+        /* id Selector */
+        #myh1 {
+            color: blue;
+        }
+
+        /* class Selector */
+        .class1 {
+            background-color: pink;
+        }
+
+        /* 只有 p 的 class1 可以套用 */
+        p.class1 {
+            background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="myh1">Hello, World!</h1>
+
+    <!-- css Inline -->
+    <h1 style="color: green;">另一個h1標題</h1>
+    <h2>JavaScript程式設計第二週</h2>
+    <p class="class1" style="text-decoration: line-through;">這是一個網頁的範例</p>
+
+    <a href="https://www.stust.edu.tw" target="_blank">南臺科技大學(_blank 產生新分頁)</a>
+    <br />
+    <a href="https://www.stust.edu.tw" target="_parent">南臺科技大學(_parent 取代原來的網頁)</a>
+
+    <script src="script.js"></script>
+    <table>
+        <tr>
+            <th>Header 1</th>
+            <th>Header 2</th>
+            <th>Header 3</th>
+            <th>Header 4</th>
+            <th>Header 5</th>
+        </tr>
+        <tr>
+            <td>Row 1, Column 1</td>
+            <td>Row 1, Column 2</td>
+            <td>Row 1, Column 3</td>
+            <td>Row 1, Column 4</td>
+            <td>Row 1, Column 5</td>
+        </tr>
+        <tr>
+            <td>Row 2, Column 1</td>
+            <td>Row 2, Column 2</td>
+            <td>Row 2, Column 3</td>
+            <td>Row 2, Column 4</td>
+            <td>Row 2, Column 5</td>
+        </tr>
+        <tr>
+            <td>Row 3, Column 1</td>
+            <td>Row 3, Column 2</td>
+            <td>Row 3, Column 3</td>
+            <td>Row 3, Column 4</td>
+            <td>Row 3, Column 5</td>
+        </tr>
+    </table>
+
+    <br />
+
+    <!--
+        colspan="2" 是將列的兩格合併
+        rowspan="2" 是將行的兩格合併
+    -->
+    <table>
+        <tr>
+            <th>Header 1</th>
+            <th>Header 2</th>
+            <th>Header 3</th>
+            <th>Header 4</th>
+            <th>Header 5</th>
+        </tr>
+        <tr>
+            <td colspan="2">A</td>
+            <td>C</td>
+            <td>D</td>
+            <td>E</td>
+        </tr>
+        <tr>
+            <td rowspan="2">F</td>
+            <td>G</td>
+            <td>H</td>
+            <td colspan="2" rowspan="2">I</td>
+        </tr>
+        <tr>
+            <td>L</td>
+            <td>M</td>
+        </tr>
+    </table>
+
+    <img src="img/1130124.jpg" alt="南臺科技大學">
+</body>
+
+</html>

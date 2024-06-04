@@ -1,0 +1,23 @@
+body{
+    background-color: pink;
+}
+
+h1 {
+    color: red;
+    text-decoration: underline;
+    text-align: left;
+}
+/* 第三週教材所使用的CSS */
+h2 {
+    color: green;
+    background-color: yellow;
+    border: 1px solid blue;
+    padding: 5px;
+}
+
+table, th, td{
+    border: 1px solid blue;
+    border-collapse: collapse;
+    padding: 5px;
+    text-align: center;
+}
