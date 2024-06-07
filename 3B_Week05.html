@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- 以下是 JavaScript Internal 的寫法 -->
+    <script>
+        function myFunction() {
+            document.getElementById('demo2').innerHTML = '你好, JavaScript!';
+        }
+    </script>
+
+    <!-- 以下是 JavaScript External 的寫法 -->
+    <script src="js/week05.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <p id="demo">第五週範例</p>
+    <p id="demo2">Hello, World!</p>
+
+    <!-- 以下是 JavaScript Inline 的寫法 -->
+    <button type="button" onclick="document.getElementById('demo').innerHTML = 'Hello, JavaScript!'">點我</button>
+    <button type="button" onclick="myFunction()">點我</button>
+</body>
+</html>
