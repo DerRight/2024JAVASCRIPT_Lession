@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>N*N乘法表</title>
+    <script>
+        function myFunction() {
+            // Number 是把輸入的值變成數字
+            let n = Number(document.getElementById('num').value);
+            let table = document.getElementById("myTable");
+            table.innerHTML = "";
+
+            // 做99乘法表運算
+            for (let i = 1; i <= n; i++) {
+                // 執行後產生 n 個 tr (HTML元件)，createElement("這邊都是HTML元件")
+                let row = document.createElement("tr");
+
+                for (let j = 1; j <= n; j++) {
+                    // 執行後產生 n 個 td
+                    let cell = document.createElement("td");
+
+                    // 運算 i * j
+                    let cellText = `${i} * ${j} = ${i*j}`;
+
+                    // 將 cellText 的運算結果輸出至cell的格子中
+                    cell.textContent = cellText;
+
+                    // 在 row 中生成 cell
+                    row.appendChild(cell);
+                }
+                // 在 table 中生成row
+                table.appendChild(row);
+            }
+        }
+    </script>
+
+    <style>
+        table {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        td {
+            border: 1px solid black;
+            text-align: center; /* 文字置中對齊 */
+        }
+    </style>
+</head>
+<body>
+    <h1>N*N乘法表</h1>
+    <input type="text" id="num" placeholder="請輸入一個整數N" />
+    <button type="button" onclick="myFunction()">OK</button>
+    <br />
+    <br />
+    <table id="myTable"></table>
+</body>
+</html>
